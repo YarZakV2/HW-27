@@ -1,0 +1,45 @@
+ul {
+  list-style-type: none;
+}
+.box {
+  position: fixed;
+  width: 300px;
+  height: 400px;
+  background-color: gray;
+  bottom: 0;
+  left: -245px;
+  transition: left 500ms;
+}
+.box:hover{
+  left: 0px;
+  .box-title{
+    opacity: 0;
+  }
+}
+.box-item {
+  margin-bottom: 35px;
+}
+.box-link {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+}
+.box-item::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: tan;
+  display: inline-block;
+  transform: rotate(45deg);
+}
+.box-title{
+  color: white;
+  font-size: 35px;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 150px;
+  right: -85px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 500ms;
+}
